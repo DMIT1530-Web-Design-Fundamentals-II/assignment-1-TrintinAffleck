@@ -11,7 +11,8 @@
     padding: 0.5rem;
 }
 
-.hero > nav > ul, .top-nav > nav > ul {
+.hero > nav > ul,
+.top-nav > nav > ul {
     display: flex;
 }
 
@@ -30,9 +31,10 @@
     justify-content: center;
     min-width: 100vw;
 }
-.top-nav > nav > ul > li:hover, .top-nav > nav > ul > li > a:hover{
+.top-nav > nav > ul > li:hover,
+.top-nav > nav > ul > li > a:hover
+{
     background-color: rgb(120, 159, 77);
-   
 }
 
 .top-nav > nav > ul > li > a {
@@ -50,7 +52,8 @@
     color: rgb(216, 228, 203);
 }
 
-.hero > nav > ul > li > a, h1{
+.hero > nav > ul > li > a,
+h1{
     color: rgb(31,67,111);
 }
 
@@ -83,7 +86,8 @@ main > nav {
     color: rgb(42, 94, 165);
 }
 
-.index-ul > li:hover, .index-ul > li > a:hover {
+.index-ul > li:hover,
+.index-ul > li > a:hover {
     background-color: rgb(42, 94, 165);
     color: white;
 }
@@ -120,7 +124,7 @@ main > nav {
     text-align: center;
 }
 
-.energy-stats > a, .numbers > a:hover {
+.energy-stats > a:hover, .numbers > a:hover {
     border: 1px solid rgb(30, 66, 110);
     background-color: rgb(232, 244, 249);
     color: rgb(30, 66, 110);
@@ -148,7 +152,9 @@ footer > nav > ul {
     gap: 0.6rem;
 }
 
-footer > nav > ul > li > a:hover, .info > a:hover {
+footer > nav > ul > li > a:hover,
+.info > a:hover,
+.wrapper > a:hover {
     color: rgb(120, 160, 77);
 }
 
@@ -160,13 +166,15 @@ footer > nav > ul > li > a:hover, .info > a:hover {
     padding: 1rem 0;
 } 
 
-.card, .community-card {
+.card,
+.community-card {
     text-align: center;
     background-color: rgb(30, 66, 110);
     height: fit-content;
 }
 
-.card > span, .community-card > a {
+.card > span,
+.community-card > a {
     color: white;
 }
 
@@ -320,7 +328,7 @@ footer > nav > ul > li > a:hover, .info > a:hover {
         width: 100%;
         
     }
-    
+
     .main-content {
         display: flex;
         flex-direction: column;
@@ -337,7 +345,5 @@ footer > nav > ul > li > a:hover, .info > a:hover {
     footer {
         flex-direction: column;
     }
-
-
 
 } 
