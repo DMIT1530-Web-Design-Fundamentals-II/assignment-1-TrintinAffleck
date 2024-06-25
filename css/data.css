@@ -8,7 +8,7 @@
   --p:20;
   --b:22px;
   --c:darkred;
-  --w:150px;
+  --w:14rem;
   
   width:var(--w);
   aspect-ratio:1;
@@ -55,7 +55,6 @@
 .data-graphs {
     display: flex;
     gap:1rem;
-    padding: 2rem;
 }
 
 .chart div {

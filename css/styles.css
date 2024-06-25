@@ -49,7 +49,7 @@
 
 .hero > nav > ul > li > a:hover {
     text-decoration: underline;
-    color: rgb(216, 228, 203);
+    color: rgb(120, 160, 77);
 }
 
 .hero > nav > ul > li > a,
@@ -63,7 +63,7 @@ h1{
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    margin:0.4rem auto;
+    margin:0.4rem 0.4rem;
 
 }
 
@@ -95,7 +95,7 @@ main > nav {
 .energy-stats {
     height: 100%;
     width: 50%;
-    padding: 0.5rem;
+    padding: 1rem 0.8rem;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -106,7 +106,6 @@ main > nav {
     background-color: rgb(245, 245, 245);
     width: 50%;
     padding: 1rem 0.8rem;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -116,12 +115,14 @@ main > nav {
 
 .energy-stats > a, .numbers > a {
     display: flex;
-    width: 30rem;
+    width: 100%;
+    margin-top: 1rem;
     justify-content: center;
     align-items: center;
     color: white;
     background-color: rgb(30, 66, 110);
     text-align: center;
+    text-decoration: none;
 }
 
 .energy-stats > a:hover, .numbers > a:hover {
@@ -148,13 +149,14 @@ footer {
 
 footer > nav > ul {
     display: flex;
-    
     gap: 0.6rem;
 }
 
 footer > nav > ul > li > a:hover,
 .info > a:hover,
-.wrapper > a:hover {
+.wrapper > a:hover,
+.info-text > a:hover,
+.help-card > a:hover {
     color: rgb(120, 160, 77);
 }
 
@@ -173,9 +175,13 @@ footer > nav > ul > li > a:hover,
     height: fit-content;
 }
 
-.card > span,
-.community-card > a {
+.card > a
+{
     color: white;
+}
+
+.card:hover {
+    background-color: rgb(42, 94, 165);
 }
 
 .info-text   {
@@ -183,6 +189,7 @@ footer > nav > ul > li > a:hover,
     flex-direction: column;
     padding: 1rem;
 }
+
 
 .info {
     display: flex;
@@ -242,19 +249,26 @@ footer > nav > ul > li > a:hover,
     gap: 1rem;
 }
 
-.community-card > img{
+.community-card > img {
     height: 10rem;
-    width: calc(50vw / 3);
+    width: 100%;
 }
 
 .community-text{
-    width: calc(51vw);
+    width: 51vw;
 }
 
 .community-text > h2 {
     text-align: center;
 }
 
+.community-card > a {
+    color: white;
+}
+
+.community-card:hover {
+    background-color: rgb(42, 94, 165);
+}
 .foreground {
     background: url('../dmit-assignment-1-assets/building-stronger.webp') center / cover no-repeat;
     width: 100vw;
@@ -268,9 +282,8 @@ footer > nav > ul > li > a:hover,
     flex-direction: column;
     padding: 1rem;
     background-color: rgb(245, 245, 245, 0.8);
-    position: relative;
-    left: 50%;
-    width: 35vw;
+    margin-left: 35rem;
+    margin-right: 5rem;
 }
 
 /* Above 1300 */
@@ -304,6 +317,9 @@ footer > nav > ul > li > a:hover,
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .wrapper {
+        margin-left: 20rem;
+    }
 
 }
 
@@ -330,16 +346,16 @@ footer > nav > ul > li > a:hover,
     }
 
     .main-content {
-        display: flex;
         flex-direction: column;
-        padding: 0.5rem 1rem;
-        gap: 2rem;
     }
 
-    .main-buttons {
-        width: 100%;
-        text-align: center;
-        padding: 0.5rem;
+    .community-cards {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        margin: 0 5rem;
+
     }
 
     footer {
